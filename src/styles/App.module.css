@@ -1,0 +1,26 @@
+.btnGlobal{
+  border: none;
+  outline: none;
+  position: fixed;
+  left:48%;
+  bottom: 9px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.418);
+  transition: all 300ms;
+}
+.btnGlobal:hover{
+  transform: scale(1.07);
+}
+.btnGlobal:active{
+  transform: scale(.9);
+}
+
+.active{
+  background-color: #1dff74;
+}
+.inactive{
+  background-color: #ff1d1d;
+}

@@ -1,0 +1,40 @@
+.formContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(28, 96, 151);
+}
+.Form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    height: 50vh;
+    padding: 20px;
+}
+.Form input[type="text"]{
+    outline: none;
+    appearance: none;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 9px;
+    background-color: #333;
+    color: wheat;
+}
+.Form input[type="text"]:focus{
+    outline: 1px solid #1de5ff;
+}
+.Form button[type="submit"]{
+    outline: none;
+    appearance: none;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 9px;
+    background-color: #1de5ff;
+    color: black;
+    cursor: pointer;
+}

@@ -1,0 +1,21 @@
+.general{
+    position: fixed;
+    top: 5px;
+    left: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(117, 117, 117, 0.63);
+    padding: 1rem;
+    border-radius: 11px;
+    color: rgb(226, 226, 226);
+}
+.win{
+    color: #02ff02;
+    font-weight: bold;
+}
+.wrong{
+    color: #ff0000;
+    font-weight: bold;
+}
