@@ -38,7 +38,7 @@ const Tarjet = () => {
             <section className={Styles.container}>
             <div className={Styles.tarjeta}  onClick={changeTarjet}>
                 <h2 style={{fontSize:"2rem"}}>{Data[Current][Sentence]}</h2>
-                <span style={{opacity:"0.8",cursor:"pointer"}} className="material-icons">refresh</span>
+                <span style={{opacity:"0.7", cursor:"pointer"}} className="material-icons">refresh</span>
             </div>
             <div className={Styles.btns}>
                 <button onClick={back}><span className="material-icons">navigate_before</span></button>
