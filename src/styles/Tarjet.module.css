@@ -1,0 +1,48 @@
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    z-index: 23;
+}
+.tarjeta{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+}
+.btns{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.btns button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.btns span{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000;
+}
+.cls{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.cls span{
+    font-size: 3rem;
+    font-weight: bold;
+    color: red;
+}

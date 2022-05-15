@@ -13,7 +13,7 @@ const Chalenge = () => {
     function handleBlur(e) {
         let respuesta = e.target.value 
         respuesta == Data[current].respuesta ? toast.success(`Correcto! : ${Data[current].respuesta}`) : toast.error(`Incorrecto! es: ${Data[current].respuesta}`)
-        respuesta == Data[current].respuesta && current !== (Data.length - 1) ? setCurrent(current + 1) : setCurrent(current)
+        respuesta == Data[current].respuesta && current !== (Data.length - 1) ? setCurrent(current + 1) : (current !== (Data.length - 1)?setCurrent(current + 1): setCurrent(current))
         respuesta == Data[current].respuesta ? setGanadas(Ganadas + 1) : setPerdidas(Perdidas + 1)
         e.target.value = ''
     }
@@ -30,7 +30,8 @@ const Chalenge = () => {
                     <span hidden={true}>{Data[current].respuesta}</span>
                 </section>
             <nav className={styles.navegacion}>
-                <button onClick={() => current <= 0 ? console.log('no hay mas') : setCurrent(current - 1)}><span className="material-icons">navigate_before</span></button><button onClick={() => current >= (Data.length - 1) ?console.log('tope'):setCurrent(current + 1)}><span className="material-icons">navigate_next</span></button>
+                <button onClick={() => current <= 0 ? console.log('no hay mas') : setCurrent(current - 1)}><span className="material-icons">navigate_before</span></button>
+                <button onClick={() => current >= (Data.length - 1) ?console.log('tope'):setCurrent(current + 1)}><span className="material-icons">navigate_next</span></button>
             </nav>
             </>
             ) : <h2>No hay preguntas aun</h2>}
