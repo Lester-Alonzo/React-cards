@@ -19,7 +19,18 @@
     gap: 1rem;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 12px;
+    overflow: auto;
 }
+
+.tarjeta::-webkit-scrollbar{
+    background-color: transparent;
+    width: 5px;
+}
+.tarjeta::-webkit-scrollbar-thumb{
+    background-color: #333;
+    border-radius: 11px;
+}
+
 .tarjeta h2 {
     width: 30ch;
     margin: 0 auto;
