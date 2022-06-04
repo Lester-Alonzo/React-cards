@@ -8,9 +8,9 @@ function App() {
 
   return (
       <>
-      {Active ? <Chalenge /> : <Add />}
-      <button className={`${styles.btnGlobal} ${Active? styles.inactive: styles.active}`} onClick={() => setActive(!Active)}>{Active? <span className="material-icons">close</span> : <span className="material-icons">play_arrow</span>}</button>
-</>
+        {Active ? <Chalenge /> : <Add />}
+        <button className={`${styles.btnGlobal} ${Active? styles.inactive: styles.active}`} onClick={() => setActive(!Active)}>{Active? <span className="material-icons">close</span> : <span className="material-icons">play_arrow</span>}</button>
+      </>
   )
 }
 
